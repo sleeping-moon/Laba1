@@ -7,8 +7,8 @@ public class Lemonade extends Food{
     public Lemonade(String taste1){
         super("Lemonade");
         this.taste = taste1;
-        if(this.taste == "lemon") this.calories = 15;
-        else if (this.taste == "orange") this.calories = 24;
+        if(this.taste.equals("lemon")) this.calories = 15;
+        else if (this.taste.equals("orange")) this.calories = 24;
         else this.calories = 27;
     }
 

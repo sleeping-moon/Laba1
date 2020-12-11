@@ -9,8 +9,8 @@ public class Potatoes extends Food {
     public Potatoes(String type1) {
         super("Potatoes");
         this.type = type1;
-        if (this.type == fried) this.calories = 186;
-        else if (this.type == fries) this.calories = 312;
+        if (this.type .equals(fried)) this.calories = 186;
+        else if (this.type.equals( fries)) this.calories = 312;
         else this.calories = 86;
     }
     public void consume() {

@@ -6,11 +6,11 @@ public class Pie extends Food {
     private String strawberry = "strawberry";
     private String apple = "apple";
 
-    public Pie(String filling1) {
+    public Pie(String filling) {
         super("Pie");
-        this.filling = filling1;
-        if (this.filling == cherry) this.calories = 270;
-        else if (this.filling == strawberry) this.calories = 240;
+        this.filling = filling;
+        if (filling.equals(cherry)) this.calories = 270;
+        else if (filling.equals(strawberry)) this.calories = 240;
         else this.calories = 237;
     }
 
@@ -23,6 +23,6 @@ public class Pie extends Food {
     }
 
     public String toString() {
-        return super.toString() + " size of '" + filling.toUpperCase() + "'";
+        return super.toString() + " filling '" + filling.toUpperCase() + "'";
     }
 }

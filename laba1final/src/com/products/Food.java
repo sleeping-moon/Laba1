@@ -16,6 +16,7 @@ public abstract class Food implements Consumable, Nutritious {
     }
     public  int getcalories(){return this.calories;}
     public int calculateCalories() {return this.calories;}
+    public void consume(){};
     @Override
     public String toString(){
         return name;

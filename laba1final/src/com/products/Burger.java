@@ -9,8 +9,8 @@ public class Burger extends Food {
     public Burger(String size1) {
         super("Burger");
         this.size = size1;
-        if (this.size == small) this.calories = 270;
-        else if (this.size == middle) this.calories = 320;
+        if (this.size.equals(small)) this.calories = 270;
+        else if (this.size.equals(middle)) this.calories = 320;
         else this.calories = 400;
     }
     public void consume() {

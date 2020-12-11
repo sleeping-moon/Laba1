@@ -38,8 +38,11 @@ public class Main  {
         if(marker == false) {
             for (String arg : args) {
                 sum += breakfast[counter].calculateCalories();
+                breakfast[counter].consume();
                 counter++;
+
             }
+            System.out.println("Количесво калорий:");
             System.out.println(sum);
         }
     }

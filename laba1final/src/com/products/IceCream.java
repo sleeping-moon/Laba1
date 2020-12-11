@@ -7,7 +7,7 @@ public class IceCream extends Food {
     public IceCream(String sirup1) {
         super("IceCream");
         this.sirup = sirup1;
-        if (this.sirup == caramel) this.calories = 325;
+        if (this.sirup .equals(caramel)) this.calories = 325;
         else this.calories = 315;
     }
 

@@ -6,8 +6,8 @@ public class Milk extends Food {
     public Milk(String fat1) {
         super("Milk");
         this.fat = fat1;
-        if (this.fat == "1.5") this.calories = 45;
-        else if (this.fat == "2.5") this.calories = 52;
+        if (this.fat.equals("1.5")) this.calories = 45;
+        else if (this.fat.equals("2.5")) this.calories = 52;
         else this.calories = 75;
     }
 
